@@ -18,7 +18,7 @@ const updateValues = (json) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${BASE_URL}/api/analytics`);
+        const res = await fetch(`https://water-level-controller.onrender.com/api/analytics`);
         const json = await res.json();
         setData(json);
         updateValues(json);
